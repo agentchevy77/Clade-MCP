@@ -1,0 +1,49 @@
+{
+  "authority": {
+    "account_trial_purchase_credentials_download_ingestion": "HOLD",
+    "alerting_authority": "NONE",
+    "automated_action_authority": "NONE",
+    "development_evidence_authority": "NONE",
+    "external_provider_contact_during_dwo04": "NONE_AUTHORIZED",
+    "formal_evidence_authority": "NONE",
+    "historical_final_opened": "NO",
+    "kibot_inquiry": "PREPARED_NOT_SENT",
+    "massive_contact_any_form": "NOT_AUTHORIZED",
+    "new_confirmation_data_authority": "HOLD",
+    "predictive_authority": "NONE",
+    "real_v1_1_development": "HOLD_PENDING_CORRECTED_PROTOCOL_AND_SEPARATE_DATA_INGESTION_AUTHORITY",
+    "real_v1_2_0_development": "NOT_RUN",
+    "real_v1_2_1_development": "HOLD",
+    "stage_final": "HOLD",
+    "trading_authority": "NONE",
+    "v0_1_0_final_authority": "HOLD"
+  },
+  "candidate_id": "NME001-DWO-04-CANDIDATE",
+  "candidate_package": {
+    "filename": "NME-001-DWO-04_UNREVIEWED_RESEARCH_CANDIDATE.zip",
+    "sha256": "a08a2c9df9df6d34267e4c0bb0afdd0acfc78c1d98b29de48964f9698b0619c6",
+    "size_bytes": 1800260
+  },
+  "candidate_version": "0.3.1",
+  "embedded_manifest": {
+    "archive_path": "artifacts/verification/NME-001-DWO-04_CANDIDATE_MANIFEST.json",
+    "sha256": "da5ce6d9b71eafe25857a9fa21ae8dfcd16016e7572eda4af2d8bbda113f8b84",
+    "size_bytes": 206649
+  },
+  "marking": "UNREVIEWED DEVELOPMENT CANDIDATE — NO FORMAL, PREDICTIVE, OR TRADING AUTHORITY",
+  "partition_design_version": "1.2.0",
+  "schema_version": "NME001_DWO04_EXTERNAL_MANIFEST_V1",
+  "sealed_hermetic_reproduction": {
+    "advertised_test_count": 713,
+    "authority": "NONE",
+    "full_inventory_count": 773,
+    "full_inventory_identical": true,
+    "full_inventory_sha256": "385c4819b08655ea5e4d07a47ee902b4feffd7b9dec3170b62e8fc439ceb6d1b",
+    "named_test_set_identical": true,
+    "package_sha256": "a08a2c9df9df6d34267e4c0bb0afdd0acfc78c1d98b29de48964f9698b0619c6",
+    "reproduced_test_count": 713,
+    "status": "PASS"
+  },
+  "work_order": "NME-001-DWO-04",
+  "work_order_sha256": "f5feb728d513c9bb827bb436000ac68d56f0fea395fd6593c778a21cafc54cba"
+}

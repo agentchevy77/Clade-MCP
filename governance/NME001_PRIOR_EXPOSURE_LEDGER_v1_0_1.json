@@ -1,0 +1,122 @@
+{
+  "authority_order_sha256": "f5feb728d513c9bb827bb436000ac68d56f0fea395fd6593c778a21cafc54cba",
+  "calendar": {
+    "all_session_count": 415,
+    "calendar_name": "XNYS",
+    "calendar_package": "exchange_calendars",
+    "calendar_package_version": "4.11.1",
+    "ordinary_session_count": 412,
+    "ordinary_session_identity_sha256": "eb22307f5f35a1303be718bfc097be3eb23ab696e82047fea0017d176a8b3374",
+    "predecessor_buffer_days": 31,
+    "schedule_end": "2026-08-28",
+    "schedule_sha256": "14a849093e445abb270ce5a0b0a84e72b0f0c78cdeb86c3204d10cbfe89e6ff5",
+    "schedule_start": "2025-01-02"
+  },
+  "coverage_assertion": "EXHAUSTIVE_FOR_ALL_PRIOR_NME001_MARKET_SESSION_EXPOSURES_THROUGH_2026-08-29",
+  "custody_events": [
+    {
+      "authority_order_filename": "NME001_ORIGIN_DWO03_ACCEPTANCE_AND_DWO04_ORDER_2026-08-29.md",
+      "authority_order_sha256": "f5feb728d513c9bb827bb436000ac68d56f0fea395fd6593c778a21cafc54cba",
+      "classification_basis": "The DWO-03 independent acceptance reviewer directly displayed the already-held TradingView source row for 2026-08-28. This scientific opening reclassifies that session only; no other 2026 holdout session value was exposed by the review.",
+      "effective_date": "2026-08-29",
+      "event_id": "NME001_DWO04_ACCEPTANCE_REVIEW_EXPOSURE_2026-08-28",
+      "new_classification": "SCIENTIFICALLY_OPENED",
+      "other_sessions_reclassified": 0,
+      "prior_classification": "PROCEDURAL_HOLDOUT_UNOPENED",
+      "source_session": "2026-08-28",
+      "timestamp_utc": "2026-08-28T19:55:00Z"
+    }
+  ],
+  "eligibility_rule": "Ordinary 390-minute XNYS sessions only; scheduled half-days are not partition-eligible and are excluded.",
+  "exposure_classes": [
+    "CUSTODY_OR_IDENTITY_ONLY",
+    "PROCEDURAL_HOLDOUT_UNOPENED",
+    "SCIENTIFICALLY_OPENED",
+    "UNKNOWN"
+  ],
+  "ledger_version": "1.0.1",
+  "no_prior_exposure_attestations": [
+    {
+      "attestation_id": "NME001_HISTORICAL_FINAL_2022-06-22_TO_2024-12-31",
+      "attestation_status": "NO_PRIOR_EXPOSURE_ATTESTED_STAGE_UNAUTHORIZED",
+      "classification_basis": "The authoritative DWO-03 exposure audit identifies prior NME-001 market-session exposure only from 2025-01-02 onward; these exact earlier identities are frozen solely as the clean historical-final candidate.",
+      "first_session": "2022-06-22",
+      "identity_file": "NME001_HISTORICAL_FINAL_IDENTITIES_2022-06-22_TO_2024-12-31.json",
+      "identity_file_sha256": "db4737f03b94c1779ccd186b675d0a41fb33af3e165a949c36e476bef224c003",
+      "last_session": "2024-12-31",
+      "ordinary_session_count": 630,
+      "session_identity_sha256": "423f3ad6a8b398b12700710cdb37584ded4beac091d985118a7ebebf159bf429"
+    }
+  ],
+  "nonordinary_session_exposures": [
+    {
+      "attempt_id": "NME001-v0.1.0-v1.0.1-TRADINGVIEW",
+      "classification_basis": "Scheduled half-day source/calendar bytes participated in prior-session no-reachback and session-validation logic during the scientifically opened development attempt; classify conservatively as scientifically opened even though the session was not partition-eligible.",
+      "exclusion_reason": "SCHEDULED_HALF_DAY",
+      "exposure_class": "SCIENTIFICALLY_OPENED",
+      "session_date": "2025-07-03",
+      "session_minutes": 210
+    },
+    {
+      "attempt_id": "NME001-v0.1.0-v1.0.1-TRADINGVIEW",
+      "classification_basis": "Scheduled half-day source/calendar bytes participated in prior-session no-reachback and session-validation logic during the scientifically opened development attempt; classify conservatively as scientifically opened even though the session was not partition-eligible.",
+      "exclusion_reason": "SCHEDULED_HALF_DAY",
+      "exposure_class": "SCIENTIFICALLY_OPENED",
+      "session_date": "2025-11-28",
+      "session_minutes": 210
+    },
+    {
+      "attempt_id": "NME001-v0.1.0-v1.0.1-TRADINGVIEW",
+      "classification_basis": "Scheduled half-day source/calendar bytes participated in prior-session no-reachback and session-validation logic during the scientifically opened development attempt; classify conservatively as scientifically opened even though the session was not partition-eligible.",
+      "exclusion_reason": "SCHEDULED_HALF_DAY",
+      "exposure_class": "SCIENTIFICALLY_OPENED",
+      "session_date": "2025-12-24",
+      "session_minutes": 210
+    }
+  ],
+  "parent_ledger_filename": "NME001_PRIOR_EXPOSURE_LEDGER_v1_0_0.json",
+  "parent_ledger_sha256": "9d68286c2db7b1d2ba60e0fab059c9a1e357340223a5255cc80a16d6e24d1719",
+  "ranges": [
+    {
+      "attempt_id": "NME001-v0.1.0-v1.0.1-TRADINGVIEW",
+      "classification_basis": "Development sessions were opened for events, features, outcomes, predictions, metrics, plots, and observed-yield/design selection.",
+      "exposure_class": "SCIENTIFICALLY_OPENED",
+      "first_session": "2025-01-02",
+      "last_session": "2026-05-28",
+      "ordinary_session_count": 348,
+      "ordinary_session_identity_sha256": "aebefc29a534d5aaddb88dd876ecfce6ad17c5c46b7c0577ab2041a6ba72ec49",
+      "range_id": "NME001_PRIOR_TV_DEVELOPMENT_001"
+    },
+    {
+      "attempt_id": "NME001-v0.1.0-v1.0.1-TRADINGVIEW",
+      "classification_basis": "The permanent final-boundary embargo was assigned at custody/identity level; no scientific product or intentional outcome inspection was authorized.",
+      "exposure_class": "CUSTODY_OR_IDENTITY_ONLY",
+      "first_session": "2026-05-29",
+      "last_session": "2026-05-29",
+      "ordinary_session_count": 1,
+      "ordinary_session_identity_sha256": "9520d412771db510e06cdcdfeca6345ecb1f3e38c84b0a3d1570cea1bde0c559",
+      "range_id": "NME001_PRIOR_TV_FINAL_BOUNDARY_001"
+    },
+    {
+      "attempt_id": "NME001-v0.1.0-v1.0.1-TRADINGVIEW",
+      "classification_basis": "The procedural final holdout was identity-assigned but these 62 sessions had no event, feature, label, model, prediction, metric, plot, or intentional outcome inspection.",
+      "exposure_class": "PROCEDURAL_HOLDOUT_UNOPENED",
+      "first_session": "2026-06-01",
+      "last_session": "2026-08-27",
+      "ordinary_session_count": 62,
+      "ordinary_session_identity_sha256": "ffe0e90d6a357c619cbceab622abe99729961001da4166404caf3df3023bd7ce",
+      "range_id": "NME001_PRIOR_TV_PROCEDURAL_HOLDOUT_001_UNOPENED_REMAINDER"
+    },
+    {
+      "attempt_id": "NME001-DWO-03-INDEPENDENT-ACCEPTANCE-REVIEW",
+      "classification_basis": "The DWO-03 independent acceptance reviewer directly displayed the already-held TradingView source row for this session; classify it scientifically opened effective 2026-08-29.",
+      "exposure_class": "SCIENTIFICALLY_OPENED",
+      "first_session": "2026-08-28",
+      "last_session": "2026-08-28",
+      "ordinary_session_count": 1,
+      "ordinary_session_identity_sha256": "f466ad8c5e70977605fd2969937c301e196733d23a6c29b593199de75a7c1c11",
+      "range_id": "NME001_DWO04_ACCEPTANCE_REVIEW_OPENED_2026_08_28"
+    }
+  ],
+  "research_scope": "NME-001 market-session exposure only; synthetic fixtures contain no market sessions and are excluded."
+}
