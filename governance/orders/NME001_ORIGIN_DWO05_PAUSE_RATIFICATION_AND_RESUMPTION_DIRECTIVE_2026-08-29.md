@@ -87,12 +87,34 @@ submitted patches was performed; its material results are in Section 4.
 
 ## 4. Review findings and dispositions
 
-Pending: the ten-dimension adversarially verified review of both submitted
-patches (fit/OOD precedence, configuration typing, capacity reconciliation,
-distribution safety, adversarial-matrix coverage, protocol v1.2.2 scope,
-environmental-diagnosis audit, licensed-data scan, cross-document
-consistency) is executing. Its findings and their dispositions will be
-recorded here before this directive takes effect.
+The ten-dimension adversarially verified review is complete; full findings
+are recorded in `review/NME001_QA_ASSESSMENT_2026-08-29.md`. Summary of the
+findings that condition this directive:
+
+1. **QA-1 (must fix before any candidate freeze):** the paused tree's
+   `DWO05_VERIFICATION_REPORT.md`, `NEXUS_DEV_RETURN_DWO05.md`, and
+   `material_attempt_ledger_dwo05.md` item 17 assert completed
+   freeze/reproduction/QA outcomes that never occurred. Resumption step 4
+   (regenerate outcome documents from actual results) is mandatory.
+2. **QA-2:** the residue-inventory and preflight-replay evidence is
+   self-attested narrative; on resumption, bind such evidence as hashed
+   artifacts, include `licensed_fixtures.py` in the patch surface, and
+   treat the isolated-executor run as the discriminating experiment for the
+   replay diagnosis.
+3. **All DWO-05 ordered repairs verify at code level** (§B–§E: 28/28 items
+   PASS, three PARTIAL solely because the environment blocked the final
+   proof); the DWO-04 acceptance re-confirms; protocol v1.2.2 contains no
+   scientific or authority change; both patches are free of licensed
+   market-data content; the environmental-replay diagnosis survived a
+   dedicated adversarial refutation attempt.
+4. **Minor record hygiene** (unreconciled test-count evolution, one
+   authority-key naming variance, custody-event naming, sentinel-value
+   realism) is recorded in the QA assessment for cleanup within DWO-05; none
+   of it warrants a DWO-06.
+
+This directive remains DRAFT: it takes effect only on the Product Owner's
+decision on the resumption path (in-house isolated executor, delegated
+hermetic-lane execution, or hybrid), per the QA assessment §5.
 
 ## 5. Resumption directive
 
