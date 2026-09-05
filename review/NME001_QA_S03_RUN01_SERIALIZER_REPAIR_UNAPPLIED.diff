@@ -1,0 +1,73 @@
+--- a/src/nexus_nme001/s02_execution.py	2026-09-05 22:25:44.879300860 +0000
++++ b/src/nexus_nme001/s02_execution.py	2026-09-05 22:25:44.952546814 +0000
+@@ -31,6 +31,7 @@
+     EXPECTED_FINAL_IDENTITIES_FILE_SHA256,
+     load_corporate_action_boundary_control,
+ )
++from .exposure import session_identity_sha256
+ from .normalize import NORMALIZED_COLUMNS, NormalizationResult
+ from .pipeline import (
+     PipelineResult,
+@@ -673,9 +674,10 @@
+         or identities[-1] != date(2024, 12, 31)
+     ):
+         raise S02ExecutionError("frozen final identity boundary/count mismatch")
+-    digest = hashlib.sha256(
+-        "".join(f"{value.isoformat()}\n" for value in identities).encode("ascii")
+-    ).hexdigest()
++    # The frozen governance contract binds the canonical NME-001 session-identity
++    # serialization (compact JSON array plus one LF; exposure.session_identity_bytes),
++    # not the newline-per-date sequence digest used for S02 control-projection lists.
++    digest = session_identity_sha256(identities)
+     if digest != FINAL_IDENTITIES_ORDERED_SHA256:
+         raise S02ExecutionError("frozen final ordered identity digest mismatch")
+     if not {date(2023, 12, 29), date(2024, 6, 3), date(2024, 12, 31)}.issubset(
+--- a/tests/test_s02_execution.py	2026-09-05 22:25:44.887747384 +0000
++++ b/tests/test_s02_execution.py	2026-09-05 22:25:44.952810526 +0000
+@@ -12,6 +12,7 @@
+ import pytest
+ 
+ from nexus_nme001.calendar import XNYSSessionCalendar
++from nexus_nme001.exposure import session_identity_sha256
+ from nexus_nme001.pipeline import (
+     PipelineError,
+     S02PreparedDevelopmentSource,
+@@ -584,7 +585,6 @@
+     payload = {"session_identities": [value.isoformat() for value in identities]}
+     _write_json(path, payload)
+     raw = path.read_bytes()
+-    ordered = "".join(f"{value.isoformat()}\n" for value in identities).encode()
+     monkeypatch.setattr(
+         execution, "EXPECTED_FINAL_IDENTITIES_FILE_SHA256", hashlib.sha256(raw).hexdigest()
+     )
+@@ -592,11 +592,29 @@
+     monkeypatch.setattr(
+         execution,
+         "FINAL_IDENTITIES_ORDERED_SHA256",
+-        hashlib.sha256(ordered).hexdigest(),
++        session_identity_sha256(identities),
+     )
+     assert execution.load_frozen_final_identities(path) == identities
+ 
+ 
++def test_final_identity_loader_accepts_exact_frozen_governance_file() -> None:
++    """Real-artifact regression: the unpatched loader must accept the frozen file."""
++
++    root = Path(__file__).resolve().parents[1]
++    path = root / "governance" / execution.FINAL_IDENTITIES_FILENAME
++    frozen_config = json.loads((root / "config" / "frozen_config.json").read_text())
++    identities = execution.load_frozen_final_identities(path)
++    assert len(identities) == execution.FINAL_IDENTITIES_COUNT == 630
++    assert identities[0] == date(2022, 6, 22)
++    assert identities[-1] == date(2024, 12, 31)
++    assert (
++        session_identity_sha256(identities)
++        == execution.FINAL_IDENTITIES_ORDERED_SHA256
++        == frozen_config["historical_final_session_identities_sha256"]
++        == "423f3ad6a8b398b12700710cdb37584ded4beac091d985118a7ebebf159bf429"
++    )
++
++
+ def test_causal_successor_is_immediate_exchange_session_without_reachback() -> None:
+     calendar = XNYSSessionCalendar("2022-06-17", "2022-06-24")
+     successors = execution._causal_successors(
