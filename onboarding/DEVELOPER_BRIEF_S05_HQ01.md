@@ -84,8 +84,21 @@ and proven present *inside* a nested subprocess by a positive control.
 
 ## 6. Inputs to request from the Product Owner before starting HQ01
 
-- The S05-HQ01 charter (`NME001_ORIGIN_EPOCH07_S04_RUN01_STOP_ACCEPTANCE_AND_S05_HARNESS_QUALIFICATION_CHARTER_2026-09-06.md`, 23,009 B, `fdca0010…`).
-- The exact harness donor bundle **v1** (67,162 B) with a correct 64-character SHA-256.
-- The public offline uv-cache archive (148,782,742 B, `c4be6336…`) if cache realization is in scope.
-- The three Lease-02/03/04 stop-record identities.
-- Confirmation of your branch name and that Origin will bind to commit hashes + file digests.
+Every input must arrive with three fields: exact filename, byte count, 64-character SHA-256.
+Verify all of them before any other action, and record the observed values in your first return.
+Origin's 2026-09-06 handoff correction makes the Developer handoff **four files, not three**;
+the Lease-02/03 stops are QA's addition (they are the qualification's acceptance criteria).
+
+| # | Input | Filename | Bytes | SHA-256 |
+|---|---|---|---:|---|
+| 1 | External Developer Identity Bridge (record `NME001-ORIGIN-EXTERNAL-DEVELOPER-IDENTITY-BRIDGE-01`, v1) | *not yet stated by Origin, request it* | *not yet stated* | `68299711fc530d8e4e4e013a0fc9061bb80635b2c2523858c7445f1ba1c44961` |
+| 2 | S05-HQ01 charter | `NME001_ORIGIN_EPOCH07_S04_RUN01_STOP_ACCEPTANCE_AND_S05_HARNESS_QUALIFICATION_CHARTER_2026-09-06.md` | 23,009 | `fdca0010…` (full value in the handoff) |
+| 3 | Exact harness donor bundle **v1** | `NME001_EPOCH07_S04_LEASE04_EXACT_HARNESS_DONOR_BUNDLE.zip` | 67,162 | `ac85751e5904607e9b2c82b59e9dd835cb0e44cb5978f5d9a8a2e7a03f390e9c` |
+| 4 | Exact S04 Lease-04 defined stop (the consumed RUN01 attempt) | `NME001_EPOCH07_S04_RUN01_LEASE04_DEFINED_STOP.json` | 8,913 | `b7e127fe23f3a42b5552d9f0572f86a4a167ffe95af2b028825085afd23660be` |
+| 5 | Lease-02 defined stop (symlink map not realized) | `NME001_EPOCH07_S04_RUN01_LEASE02_DEFINED_STOP.json` | 8,624 | `8f51386afc77f07c3a82af2e1e0cc0626b19613a4b30ddc99707aef3f13ccf7b` |
+| 6 | Lease-03 defined stop (generation-1 cwd mismatch) | *request filename and bytes* | *not relayed* | `b073a51709003b385594c995f46e6120de1aed7141f2d0ef27a5955f985ae7bb` |
+| 7 | Public offline uv-cache archive, only if cache realization is in scope | `NME001_PUBLIC_OFFLINE_UV_CACHE.tar` (confirm exact name) | 148,782,742 | `c4be633674b2a4edf912be77680865f3c803fa664832cbdf2e8667d9d22c29a7` |
+
+Also obtain: confirmation of your branch name, the base commit/tree you start from, and that
+Origin binds to commit hashes plus file digests (never Library IDs). A 63-character hash, a
+blank filename, or a missing byte count is an input stop, not something to guess around.
