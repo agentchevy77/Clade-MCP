@@ -97,7 +97,7 @@ the Lease-02/03 stops are QA's addition (they are the qualification's acceptance
 | 4 | Exact S04 Lease-04 defined stop (the consumed RUN01 attempt) | `NME001_EPOCH07_S04_RUN01_LEASE04_DEFINED_STOP.json` | 8,913 | `b7e127fe23f3a42b5552d9f0572f86a4a167ffe95af2b028825085afd23660be` |
 | 5 | Lease-02 defined stop (symlink map not realized) | `NME001_EPOCH07_S04_RUN01_LEASE02_DEFINED_STOP.json` | 8,624 | `8f51386afc77f07c3a82af2e1e0cc0626b19613a4b30ddc99707aef3f13ccf7b` |
 | 6 | Lease-03 defined stop (generation-1 cwd mismatch) | *request filename and bytes* | *not relayed* | `b073a51709003b385594c995f46e6120de1aed7141f2d0ef27a5955f985ae7bb` |
-| 7 | Public offline uv-cache archive, only if cache realization is in scope | `NME001_PUBLIC_OFFLINE_UV_CACHE.tar` (confirm exact name) | 148,782,742 | `c4be633674b2a4edf912be77680865f3c803fa664832cbdf2e8667d9d22c29a7` |
+| 7 | Public offline uv-cache archive, only if cache realization is in scope | `NME001_DWO05_PUBLIC_OFFLINE_UV_CACHE_LINUX_X86_64.zip` | 148,782,742 | `c4be633674b2a4edf912be77680865f3c803fa664832cbdf2e8667d9d22c29a7` |
 
 Also obtain: confirmation of your branch name, the base commit/tree you start from, and that
 Origin binds to commit hashes plus file digests (never Library IDs). A 63-character hash, a
