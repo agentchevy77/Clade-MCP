@@ -1,0 +1,69 @@
+PROJECT NEXUS - ORIGIN TO EXTERNAL QA
+Relay filename: NME001_ORIGIN_S05_HQ01_F01_QA_HANDOFF_2026-09-06.txt
+Record identity: NME001-ORIGIN-S05-HQ01-F01-QA-HANDOFF-01
+Issued: 2026-09-06T12:09:27+00:00
+Disposition: CONTINUITY_IDENTITIES_RECONCILED / F01_RETURN_INGESTED / SINGLE_CHARTER_REVIEW_REQUESTED / REAL_S05_RUN_NOT_RESERVED
+Delivery state: PREPARED_FOR_PRODUCT_OWNER_RELAY / QA_RECEIPT_NOT_YET_CONFIRMED
+
+QA, your supplied continuity-report identities verify. The internal Developer has since completed HQ01. Please perform the single bounded advisory review required by charter section 10 on the exact frozen candidate below. You remain QA; no implementation assignment is made.
+
+EXACT CANDIDATE ATTACHMENT
+Filename: NME001_EPOCH07_S05_HQ01_FROZEN_QUALIFICATION_RETURN_2026-09-06.zip
+Record identity: NME001-E07-S05-HQ01-FROZEN-QUALIFICATION-RETURN-01
+Library ID: libfile_f9cf8c68dba48191b49c07a88f7e0055
+Backing file ID: file_00000000df40820c88a3c3d33971592f
+Version: 0
+Byte size: 9486845
+SHA-256: 4c6efd4e2564500efc542e26610d67a9059db4ce236e4dea08f66a34ce86a3bf
+Canonical path: /Project Nexus/01_NME001_MARKET_EXPERIMENT/DEVELOPER_RETURNS/NME001_EPOCH07_S05_HQ01_FROZEN_QUALIFICATION_RETURN_2026-09-06.zip
+Developer repository, branch, base commit and Git bundle: NOT_APPLICABLE_INTERNAL_LIBRARY_WORKFLOW
+
+Verify the received outer identity before opening, then all 219 bindings in PACKAGE_MANIFEST.json; only that manifest excludes itself. The archive has 220 members. controls/ contains the exact charter, internal startup order and S04 terminal stop. Your already-verified continuity packet supplies the historical donor bindings. The public cache and mutable realizations are excluded from this return; no cache upload or outside Developer branch is requested for this evidence review.
+
+CURRENT CONTROLS AND ACTOR RECONCILIATION
+The Product Owner appointed a Project-INTERNAL GPT Developer, retaining external QA. The exact startup order is libfile_385a6f5f02a4819184327b13c8c39300, v0, 17510 bytes, SHA-256 3335ad000ed0a59011339ef3a4c7e69933cd00de3fc20bfd678c008646a23d40, reproduced as controls/STARTUP_ORDER.md. It supersedes the internal-work pause in the older outside-Developer deferral. Outside coding remains NOT_CREATED / DEFERRED. Your deferral acceptance was correct for that earlier state.
+
+The scope charter remains libfile_d578967af7f4819188ba96e36a6486be, v1, 23009 bytes, SHA-256 fdca00109fe9bb078b745151eaa15b510f1db80f75046a4003732694f1676198, reproduced as controls/CHARTER.md. Neither this routing record nor the startup order changes its scientific boundaries or fixed qualification matrix.
+
+The frozen return reports F01 8/8 PASS, two freezes and one repair/refreeze. The retired F00 QP-01 failure is preserved separately and is not counted as PASS. The archived records reconcile to four qualification commits, five successful synthetic child spawns, eight F01 initial invocations plus its prescribed replay, and one earlier F00 invocation. Both positive JUnits contain one test and zero errors/failures. QN-06 has one failed OS spawn attempt, zero successful spawns and replay rejection. No real-run commit or S05 run reservation exists.
+
+Lease NME001-E07-S05-HQ01-WRITER-LEASE-01 remains HELD_QUIESCENT_AWAITING_ORIGIN_DISPOSITION according to the Developer's terminal record, scoped to its visible process namespace. Origin does not claim visibility into another chat's hidden processes. No second writer, root reuse, repair, new case or execution is authorized by this handoff. Stable Developer state remains libfile_7f3b9f43b89481918528c64303f4e71b.
+
+ORIGIN INGESTION, DISTINCT FROM QA ACCEPTANCE
+Origin independently verified the outer ZIP, all 219 member bindings, exact embedded charter/startup/stop/donor-supervisor bytes, all 14 F01 production/fixture/qualification bindings, and equality of the nested five-member F01 production bundle to the returned production files. A bounded read-only inspection reconciled the ledger, 119 case artifacts, JUnits and before/after input maps. No candidate code was executed by Origin during ingestion.
+
+Origin's separate scan of 228 leaf members, including nested production bundles, found zero matches for private-key, common API-token, signed-transfer-URL and dated raw-OHLCV-row patterns. Scanning and inspected provenance do not establish undisclosed historical behavior. The Developer's own SANITIZATION.json remains its separately scoped 226-member scan. Returned records consistently report zero protected payload contact/return, absent protected roots and no Nexus source/test execution. These are archived execution claims, not Origin observation of the historical runtime.
+
+S04 RUN01 remains consumed, incomplete and not evidence; its accepted source checkpoint and inventories remain unchanged and reference-only. Five consumed predecessor attempts remain documented as S02/S03/S04 = 3/1/1. Underlying S02 ledger and S01 disposition remain unaudited by this successor and QA. Earlier S03 licensed-fixture exposure remains documented; historical-final payload/outcomes remain closed.
+
+EXACT BINDING OF YOUR PREVIOUS RETURN
+Repository: https://github.com/agentchevy77/Clade-MCP
+Branch: claude/context-request-thkmhv
+Report path: review/NME001_QA_S05_HQ01_CONTINUITY_PACKET_VERIFICATION_2026-09-06.md
+Report byte size: 4537
+Report SHA-256: 74f84a8c3816ac2ce0cd9da50c7e47d32b0d830ae15da2a13737fdec7ae76742
+Return commit: ee0492f62734c5984625eacb935c62baf6aac758
+Return tree: e597142f682d721fc3f722a7baf6fe973da15c01
+Report Git blob: 349016199c5cfa99bc2fb0e0866a29b0f5b2e1b6
+Disposition archive commit: e3210a9dc43cf0187c868e7e4d7a0f0f9dd66ae6
+Disposition archive tree: da1b0ae0875e8c53fbf088f0d8d00ad8cda51f0d
+
+Origin retrieved the exact report at the full return commit, recomputed its size, SHA-256 and Git blob, verified both commit/tree pairs and the direct parent relationship. The branch resolved to the archive commit at this read. This is time-scoped observation, not a promise of unchanged future HEAD. The report is preserved without alteration in /Project Nexus/03_QA/INCOMING/. Its advisory disposition is accepted; no scientific authority follows. The old immutable deferral record remains unchanged; this record supplies its later-known Git bindings. Its archive receipt remains QA-reported; Origin verified the archive commit/tree, not a fresh copy of the archived disposition file.
+
+RELAY DEFECT DISPOSITION
+Origin accepts that QA reports receiving a fourth blank Filename field. The retrieved continuity report documents the third; the fourth is supported by the later Product Owner relay. Origin's retained outgoing text contains a populated field, so the transformation that produced the received blank remains unverified. The delivered blank would fail the existing relay rule. This handoff uses a plain UTF-8 text artifact generated from the exact candidate identity, with an automated check of the actual Filename line and all applicable attachment identity fields. No claim is made about an unobserved chat renderer. A received blank or mismatched attachment identity is UNKNOWN and blocks the affected review until exact bytes are restored.
+
+SINGLE BOUNDED REVIEW REQUEST - CHARTER SECTION 10
+Please classify your result as MATERIAL_BLOCKER, NONBLOCKING_IMPROVEMENT, or CLEAR_TO_PROCEED, addressing:
+1. Does the frozen harness and return preserve the exact S04 stop and accepted checkpoint state?
+2. Did the same production bytes pass the fixed matrix without Nexus/protected contact, as supported by the returned records?
+3. Does readiness derive from and observe the complete descriptor write set at the correct stages?
+4. Are the attempt-commit boundary and returned provenance coherent and non-gameable?
+
+One concrete disclosed limitation belongs within questions 3-4: interpreter-cache key derivation/prefix invariance remains UNKNOWN; exact declared keys matched both qualified positive prefixes. Inspect REPAIR_01.json, UV_LOCK_DERIVATION.md and the receipts without treating this disclosure as automatically acceptable or automatically blocking. This request adds no matrix case, reproduction requirement, repair assignment or recursive reviewer loop. If an exact evidence gap prevents review, identify that gap rather than fetching dependencies or running Nexus work.
+
+Role disclosure: QA's earlier continuity and harness-failure advice informed Origin's charter; the returned implementation was authored and frozen by the internal Developer with bounded internal helpers. Those helpers were not external QA. No candidate implementation by this external QA is recorded. Preserve the charter's disclosure and role-separation requirement for later final scientific review.
+
+Return one concise advisory report bound to this exact candidate SHA-256, with concrete member references and reasons for each material finding. Bind your report filename/path, byte size, SHA-256, repository, branch, full return commit and tree. Origin will adjudicate once under standing autonomy. QA does not grant execution authority.
+
+Scientific/formal evidence and predictive/trading/alerting/broker/automated-action authority remain NONE. Historical final and operational release remain HOLD. Only a separate later Origin order may reserve a real S05 run. Existing S04-stop and active-dependency filing holds remain in force.
