@@ -41,19 +41,25 @@ then the charter the Product Owner uploads to you.
 - Accepted source: **S04 checkpoint** = checkpoint v3 + the adopted serializer diff. Source-tree
   digest `d700092b…`; hermetic inventory 981 / `46dde6a2…`; licensed-inclusive 1,042 /
   `137203ed…`. QA reproduced all six gates independently. The S04 checkpoint *bytes*
-  (`74ca21c1…`, 4,001,839 B) are not in this repo — the Product Owner must upload them if
-  your charter needs them; otherwise reconstruct from v3 + diff and verify `d700092b…`.
+  (`74ca21c1…`, 4,001,839 B) are not in this repo and are **not an HQ01 input**: the charter
+  forbids importing, collecting, or running Nexus project code or tests during HQ01. Do not
+  reconstruct or open the checkpoint unless a later real-run order names it.
 - S04 RUN01 was launched once and **consumed** on a harness failure (runtime evidence
   directory never created, yet readiness was certified). S05 is opened as a
   **harness-qualification stage (S05-HQ01)**, not a run. No real run identity exists.
 - The four harness failure classes your qualification must provably catch, all from the
   last week: (1) symlink map not realized while the receipt claimed it; (2) top-level
   invocation working directory not set; (3) runtime write-root never declared or created
-  yet readiness certified; (4) `__pycache__` residue changing source-tree digests. Their
-  stop records live in Origin's Library; the Product Owner will supply identities.
+  yet readiness certified; (4) `__pycache__` residue changing source-tree digests. The exact
+  Lease-02/03/04 stop records are in this repo: `s05/` continuity packet (see §6).
 - Scientific status: zero results. Nothing you do in HQ01 has scientific weight.
 
-## 4. Environment recipe (proven in the QA container)
+## 4. Environment recipe (QA's reproduction record — NOT for use during HQ01)
+
+This recipe is how QA reproduced the S04 gates on the repo's checkpoint. Under the
+S05-HQ01 charter §11 you must **not** collect or run Nexus tests, and §5 forbids network
+dependency acquisition: HQ01 uses only the frozen public offline uv cache, its bundled
+bootstrap, and locked offline `uv sync`. Read this section for the gotchas only.
 
 ```text
 python 3.12; pip install pytest pyarrow scikit-learn scipy matplotlib joblib 'pandas<3' exchange_calendars==4.11.1
@@ -82,23 +88,32 @@ and proven present *inside* a nested subprocess by a positive control.
 7. Return format: one Markdown report + hashed artifacts. No narrative PASS without the
    observation that produced it.
 
-## 6. Inputs to request from the Product Owner before starting HQ01
+## 6. Inputs (all delivered in one packet, archived in this repo)
 
-Every input must arrive with three fields: exact filename, byte count, 64-character SHA-256.
-Verify all of them before any other action, and record the observed values in your first return.
-Origin's 2026-09-06 handoff correction makes the Developer handoff **four files, not three**;
-the Lease-02/03 stops are QA's addition (they are the qualification's acceptance criteria).
+Origin's sanitized continuity packet is the single handoff. QA verified its outer identity,
+all nine internal digests, every charter-stated donor binding, and a zero-result leak scan.
 
-| # | Input | Filename | Bytes | SHA-256 |
-|---|---|---|---:|---|
-| 1 | External Developer Identity Bridge (record `NME001-ORIGIN-EXTERNAL-DEVELOPER-IDENTITY-BRIDGE-01`, v1) | *not yet stated by Origin, request it* | *not yet stated* | `68299711fc530d8e4e4e013a0fc9061bb80635b2c2523858c7445f1ba1c44961` |
-| 2 | S05-HQ01 charter | `NME001_ORIGIN_EPOCH07_S04_RUN01_STOP_ACCEPTANCE_AND_S05_HARNESS_QUALIFICATION_CHARTER_2026-09-06.md` | 23,009 | `fdca0010…` (full value in the handoff) |
-| 3 | Exact harness donor bundle **v1** | `NME001_EPOCH07_S04_LEASE04_EXACT_HARNESS_DONOR_BUNDLE.zip` | 67,162 | `ac85751e5904607e9b2c82b59e9dd835cb0e44cb5978f5d9a8a2e7a03f390e9c` |
-| 4 | Exact S04 Lease-04 defined stop (the consumed RUN01 attempt) | `NME001_EPOCH07_S04_RUN01_LEASE04_DEFINED_STOP.json` | 8,913 | `b7e127fe23f3a42b5552d9f0572f86a4a167ffe95af2b028825085afd23660be` |
-| 5 | Lease-02 defined stop (symlink map not realized) | `NME001_EPOCH07_S04_RUN01_LEASE02_DEFINED_STOP.json` | 8,624 | `8f51386afc77f07c3a82af2e1e0cc0626b19613a4b30ddc99707aef3f13ccf7b` |
-| 6 | Lease-03 defined stop (generation-1 cwd mismatch) | *request filename and bytes* | *not relayed* | `b073a51709003b385594c995f46e6120de1aed7141f2d0ef27a5955f985ae7bb` |
-| 7 | Public offline uv-cache archive, only if cache realization is in scope | `NME001_DWO05_PUBLIC_OFFLINE_UV_CACHE_LINUX_X86_64.zip` | 148,782,742 | `c4be633674b2a4edf912be77680865f3c803fa664832cbdf2e8667d9d22c29a7` |
+- Packet: `s05/NME001_S05_HQ01_SANITIZED_CONTROL_CONTINUITY_PACKET_20260906.zip`, 103,630 B,
+  `ced7d1a4a7d3bf4cd377c9fdcc826f7b885c4201f08775edde026c7e6915a1d5`. Verify it yourself, then
+  verify `SHA256SUMS.txt` inside it, before reading anything else. Read `00_READ_FIRST.md`
+  for precedence: the charter is the sole work authority; the bridge governs identities only.
 
-Also obtain: confirmation of your branch name, the base commit/tree you start from, and that
-Origin binds to commit hashes plus file digests (never Library IDs). A 63-character hash, a
-blank filename, or a missing byte count is an input stop, not something to guess around.
+| Member | Bytes | SHA-256 (prefix) | Role |
+|---|---:|---|---|
+| `…S05_HARNESS_QUALIFICATION_CHARTER_2026-09-06.md` | 23,009 | `fdca0010…` | controlling work authority |
+| `NME001_ORIGIN_EXTERNAL_DEVELOPER_IDENTITY_BRIDGE_2026-09-06.md` | 7,411 | `68299711…` | identity/custody rules for your returns |
+| `NME001_ORIGIN_S05_HQ01_CURRENT_STATE_RECONCILIATION_2026-09-06.md` | 6,560 | `27c45216…` | status only, no authority |
+| `NME001_EPOCH07_S04_LEASE04_EXACT_HARNESS_DONOR_BUNDLE.zip` | 67,162 | `ac85751e…` | diagnostic donor, not qualified |
+| `NME001_EPOCH07_S04_RUN01_LEASE02_DEFINED_STOP.json` | 8,624 | `8f51386a…` | regression spec: cache symlinks unrealized |
+| `NME001_EPOCH07_S04_RUN01_LEASE03_DEFINED_STOP.json` | 4,856 | `b073a517…` | regression spec: generation-1 cwd |
+| `NME001_EPOCH07_S04_RUN01_LEASE04_DEFINED_STOP.json` | 8,913 | `b7e127fe…` | regression spec: write-root unrealized |
+| `…LEASE03_CWD_STOP_DISPOSITION_AND_LEASE04_RUN01_CONTINUATION_2026-09-06.md` | 17,326 | `be54cd54…` | retired Lease-04 order, context only |
+
+**Separate, not in the packet, required before qualification can execute:** the public
+offline uv-cache archive `NME001_DWO05_PUBLIC_OFFLINE_UV_CACHE_LINUX_X86_64.zip`,
+148,782,742 B, `c4be633674b2a4edf912be77680865f3c803fa664832cbdf2e8667d9d22c29a7`. Its absence
+is a preflight block, never permission to fetch dependencies from the network.
+
+Also obtain from the Product Owner: your branch name and base commit/tree. Bind every
+return by commit + tree + file digests exactly as the bridge specifies; never claim Library
+IDs. A 63-character hash, a blank filename, or a missing byte count is an input stop.
