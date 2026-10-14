@@ -206,13 +206,13 @@ VIX-family statistics computed from Cboe daily closes through 2026-10-13; SPX st
 - 03-greeks-and-hedging: vega/vomma/vanna exposures are priced off the surface dynamics here; SSR gives the skew-adjusted delta; the VRP is why systematic short gamma earns; the realized-vs-implied gap drives delta-hedging P&L.
 - 05-dealer-positioning-and-option-flows: demand-pressure explanation of skew and VRP; dealer gamma as vol dampener/amplifier; VIX ETP rebalancing and Feb 2018.
 - 06-market-microstructure-and-intraday-behavior: microstructure noise in RV, opening-auction quote width (2024-08-05), intraday vol seasonality and overnight variance share, closing-auction concentration of ETP rebalances.
-- 07-event-risk-earnings-dividends [id per KB index]: earnings-move pricing, ex-event vol, vol crush and the mechanical event drop are the vol-side view of that domain's calendar.
+- (gap domain `14-scheduled-events-earnings-and-macro-calendar`, not yet written; nearest existing coverage: `02-pricing-theory` event-variance block, `07-strategies-and-position-management` earnings entries): earnings-move pricing, ex-event vol, vol crush and the mechanical event drop are the vol-side view of that calendar.
 - 08-empirical-literature-and-known-regularities: VRP, put-return and skew-premium literature, correlation risk premium and dispersion, VRP term structure, vol-managed portfolios, pre-FOMC drift (Lucca-Moench 2015), macro-announcement premia (Savor-Wilson 2013).
 - 09-market-structure-regulation-and-plumbing: Cboe HOSS/SOQ procedures, CFE listing rules, ETN vs ETF structure (acceleration clauses, creation halts), SEC/CFTC oversight.
 - 11-current-landscape-2025-2026: dated levels (52.33 on 2025-04-08; 31.05 on 2026-03-27; 15.27 on 2026-10-13), 0DTE share, current ETP AUM/open interest and the structural-selling debate live there; construction and mechanics live here.
 - 12-data-tooling-and-research-methodology: estimator implementation, annualization, clock and return conventions, overlapping-window inference (HAC, block bootstrap), data sources used here (Cboe index CSVs, FRED).
-- Credit/rates domain (if present): the ex-ante spike discriminators (spreads, FRA-OIS, basis, MOVE) belong there.
-- Key levels / support-resistance (whichever domain holds them): independent of this file; by design this file contains no statistics on price behaviour at prior-session highs or lows (sealed experiment).
+- (gap domain `15-options-on-futures-and-cross-asset-options`, not yet written; nearest existing coverage: `10-historical-episodes-and-regimes` rates-vol regimes entry, `11-current-landscape-2025-2026` Fed/10y entries): the ex-ante spike discriminators (spreads, FRA-OIS, basis, MOVE) belong there.
+- (gap domain `19-technical-levels-and-reference-price-literature`, not yet written; nearest existing coverage: `08-empirical-literature-and-known-regularities` technical-analysis priors, `05-dealer-positioning-and-option-flows` option walls): independent of this file; by design this file contains no statistics on price behaviour at prior-session highs or lows (sealed experiment).
 
 ## Sources
 

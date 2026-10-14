@@ -205,19 +205,15 @@ Anchored on the entry a trader could know instead of the peak:
 - **2026 attributions**: the causes of 2026-06-05 and 2026-01-20 are not established (one review doubted any early-June US strikes; Wikipedia lists coastal-radar strikes on 06-06 and 06-09 and renewed strikes 06-26/27, all after the 06-05 close, plus the 4.2% CPI release on 06-10). Secondary 2026 Brent figures are front-month futures, $10-20 below FRED Dated Brent at the peaks. Whether Cboe's holiday rows (2025-06-19 etc.) are global-trading-hours computations is inferred from the NYSE calendar, not documented by Cboe.
 
 ## Relationships to other domains
-- Volatility surface/skew/term structure (likely 02-...): 1987 origin of index skew; 2022 skew flattening and the 2025 SKEW record; fixed-vs-normalized skew in crashes.
-- Realized-vol measurement (likely 03-...): all RV figures here are 21-day close-to-close annualized sqrt(252); the RV-minus-VIX regime rule depends on that window.
-- Correlation/dispersion (likely 04-...): 2007 quant quake, Jan 2021, record-low implied correlation in 2024 and the Aug-2024 dispersion unwind.
-- Dealer positioning/gamma/flows (likely 05-...): every amplifier above (portfolio insurance, dealer short gamma, vol-target, ETP rebalance) is hedging-flow feedback.
-- Structured products/autocallables (likely 06-...): dealer vega-flip mechanics and the supply-chain sizes.
-- VIX and volatility products (likely 07-...): methodology weaknesses at the open (2015, 2024), cash-futures basis in spikes, ETP rebalancing math (2018), SOQ settlement vs cash and the Griffin-Shams debate.
-- 0DTE/short-dated options (likely 08-...): 2023 growth, VIX blindness to same-day gamma, VIX1D, contested amplification.
-- Market microstructure/halts/liquidity (likely 09-...): 1989, 2010, 2012 (Knight), 2014 (Treasury), 2015, 2020 breakers, stub quotes, busted trades, LULD.
-- Event vol and macro catalysts (likely 11-...): FOMC 2024-12-18, Brexit, Nov-2016 and Apr-2017 elections, tariff announcements, payrolls (2024-08-02, 2025-08-01).
-- Risk management/sizing (likely 12-...): convexity of short variance, margin spirals, survival capital (LTCM, LJM, Structured Alpha, Melvin), stress in VIX points, decay anchored on entry.
-- Rates/cross-asset vol (MOVE, swaptions): 1994, 2013, 2014-10-15, LDI 2022, SVB 2023, Treasury dysfunction 2020, Apr 2025 basis trade, Oct 2023 and Sep-Oct 2026 5% 10y with low VIX.
-- Data sources (OCC, Cboe files): holiday rows, OPEN field, FRED SP500 window, PPUT/VIX3M/VVIX/SKEW availability.
-- Support/resistance and key levels (likely 13-...): episodes show round-number index levels, prior highs and large-open-interest strikes attract hedging flow in stress; this file contains no statistics on SPY reactions at prior-session highs/lows (sealed experiment).
+- `04-volatility` (surface/skew/term structure, correlation/dispersion, VIX products): 1987 origin of index skew; 2022 skew flattening and the 2025 SKEW record; fixed-vs-normalized skew in crashes; 2007 quant quake, Jan 2021, record-low implied correlation in 2024 and the Aug-2024 dispersion unwind; methodology weaknesses at the open (2015, 2024), cash-futures basis in spikes, ETP rebalancing math (2018), SOQ settlement vs cash and the Griffin-Shams debate; VIX1D.
+- `12-data-tooling-and-research-methodology` (realized-vol conventions shared with `04-volatility`; data sources): all RV figures here are 21-day close-to-close annualized sqrt(252); the RV-minus-VIX regime rule depends on that window; OCC and Cboe files: holiday rows, OPEN field, FRED SP500 window, PPUT/VIX3M/VVIX/SKEW availability.
+- `05-dealer-positioning-and-option-flows`: every amplifier above (portfolio insurance, dealer short gamma, vol-target, ETP rebalance) is hedging-flow feedback; 0DTE/short-dated options (no separate file; dated shares in `11-current-landscape-2025-2026`): 2023 growth, VIX blindness to same-day gamma, contested amplification.
+- (gap domain `18-exotics-structured-products-and-embedded-option-flows`, not yet written; nearest existing coverage: `05-dealer-positioning-and-option-flows` autocallable entries): dealer vega-flip mechanics and the supply-chain sizes.
+- `06-market-microstructure-and-intraday-behavior` (halts/liquidity): 1989, 2010, 2012 (Knight), 2014 (Treasury), 2015, 2020 breakers, stub quotes, busted trades, LULD.
+- (gap domain `14-scheduled-events-earnings-and-macro-calendar`, not yet written; nearest existing coverage: `08-empirical-literature-and-known-regularities` announcement entries, `11-current-landscape-2025-2026` macro narrative): FOMC 2024-12-18, Brexit, Nov-2016 and Apr-2017 elections, tariff announcements, payrolls (2024-08-02, 2025-08-01).
+- `13-risk-management-and-behavioral`: convexity of short variance, margin spirals, survival capital (LTCM, LJM, Structured Alpha, Melvin), stress in VIX points, decay anchored on entry.
+- (gap domain `15-options-on-futures-and-cross-asset-options`, not yet written; nearest existing coverage: the rates-vol regimes entry in this file, `11-current-landscape-2025-2026` Fed/10y entries) (MOVE, swaptions): 1994, 2013, 2014-10-15, LDI 2022, SVB 2023, Treasury dysfunction 2020, Apr 2025 basis trade, Oct 2023 and Sep-Oct 2026 5% 10y with low VIX.
+- (gap domain `19-technical-levels-and-reference-price-literature`, not yet written; nearest existing coverage: `08-empirical-literature-and-known-regularities` technical-analysis priors, `05-dealer-positioning-and-option-flows` option walls): episodes show round-number index levels, prior highs and large-open-interest strikes attract hedging flow in stress; this file contains no statistics on SPY reactions at prior-session highs/lows (sealed experiment).
 
 ## Sources
 Primary data and official reports

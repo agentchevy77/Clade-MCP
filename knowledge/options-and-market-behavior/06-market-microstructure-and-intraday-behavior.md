@@ -186,12 +186,11 @@ Session arithmetic (5-min bars, left-labelled, close minute excluded): full day 
 - **Overnight variance share and NSPY performance figures**: order-of-magnitude only; not sourced this session.
 
 ## Relationships to other domains
-- Options greeks and dealer positioning: gamma/vanna/charm hedging flows into 3:30–4:00 (Baltussen et al. hedging-demand channel); 0DTE expiry at 4:00 pm; strike pinning conditional on dealer net gamma; SPX AM-settled expiries use constituent opening prints (SOQ) [domain ids per KB index, uncertain].
-- Volatility/VIX: the intraday realized-volatility periodicity, announcement spikes (8:30/10:00/2:00) and the overnight/intraday variance split (regime- and calendar-dependent) feed realized-vol estimators and 0DTE pricing; VIX settlement is an AM SOQ.
-- ETF/futures/basis: fair value, implied financing richness vs SOFR, roll, SOQ settlement, ES daily settlement, BTIC/TACO and SPY dividend accrual are shared with any SPX/SPY/ES instrument domain.
-- Macro-event domain: FOMC/CPI/NFP/ISM timing, the pre-FOMC drift literature and its VIX-conditional form.
-- Backtesting methodology/governance: data snooping (White 2000; Hansen 2005), calendar handling, auction-print condition codes, stale-open bias, and the rule that SPY level-reaction statistics are sealed for this project.
-- Market-data engineering: SIP vs direct feeds, odd-lot/round-lot definitions, trade conditions ("I", "T", "M"), `exchange_calendars` session logic.
+- `03-greeks-and-hedging` and `05-dealer-positioning-and-option-flows`: gamma/vanna/charm hedging flows into 3:30–4:00 (Baltussen et al. hedging-demand channel); 0DTE expiry at 4:00 pm; strike pinning conditional on dealer net gamma; SPX AM-settled expiries use constituent opening prints (SOQ).
+- `04-volatility`: the intraday realized-volatility periodicity, announcement spikes (8:30/10:00/2:00) and the overnight/intraday variance split (regime- and calendar-dependent) feed realized-vol estimators and 0DTE pricing; VIX settlement is an AM SOQ.
+- `01-options-fundamentals` (SPX/SPY/XSP/ES comparison, SET) and gap domain `15-options-on-futures-and-cross-asset-options` (not yet written; nearest existing coverage: the ETF-arbitrage/SPY–ES linkage and futures-settlement entries here): fair value, implied financing richness vs SOFR, roll, SOQ settlement, ES daily settlement, BTIC/TACO and SPY dividend accrual.
+- (gap domain `14-scheduled-events-earnings-and-macro-calendar`, not yet written; nearest existing coverage: `08-empirical-literature-and-known-regularities` pre-FOMC/announcement entries, `02-pricing-theory` event-variance block): FOMC/CPI/NFP/ISM timing, the pre-FOMC drift literature and its VIX-conditional form.
+- `12-data-tooling-and-research-methodology`: data snooping (White 2000; Hansen 2005), calendar handling, auction-print condition codes, stale-open bias, and the rule that SPY level-reaction statistics are sealed for this project; SIP vs direct feeds, odd-lot/round-lot definitions, trade conditions ("I", "T", "M"), `exchange_calendars` session logic.
 
 ## Sources
 Academic:

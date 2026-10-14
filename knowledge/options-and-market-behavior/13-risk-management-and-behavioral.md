@@ -207,18 +207,16 @@ Disposition (Odean 1998): PGR = realized gains/(realized+paper gains); PLR likew
 - **Fund-loss figures** for the LJM mutual fund, Malachite, Catalyst, OptionSellers.com and IBKR 2020 are from press coverage and approximate; only LJM's 80%+ loss and $1bn+ AUM come from a regulator.
 
 ## Relationships to other domains
-- Volatility surface / skew and term structure: supplies the skew-steepening and term-inversion shocks and the sticky-strike vs sticky-delta assumptions used in the stress matrix.
-- Greeks and higher-order risk: gamma, vega, vanna, volga drive the scenario math and the greek limit sheet; cross-greeks explain why joint shocks exceed the sum of single shocks.
-- Variance-risk-premium / short-volatility strategies: provides the edge estimate (mu, sigma, tail) that feeds Kelly and stress sizing; the survivorship cases here are that domain's failure modes.
-- Margin, clearing and settlement: FINRA 4210 (Reg T, TIMS, the 2026 intraday margin standards), OCC novation and exercise rules, SIPC, NSCC margin calls (Jan 2021) are the plumbing behind margin expansion, assignment and counterparty risk.
-- Expiration and settlement mechanics: SET, Thursday last trade for AM-settled SPX, SPXW 4:00 pm close, exercise cut-offs and pin risk.
-- Earnings and event volatility: implied-move sizing from the straddle and the de Silva-Smith-So evidence on retail buying at peak IV.
-- Taxation: Section 1256 scope (broad-based index options yes, ETF options no) and year-end mark-to-market.
-- Market microstructure and retail order flow: PFOF, wholesaler execution and bid-ask cost as the main channel of retail losses (Bryzgalova et al.); attention and herding flows.
-- Dealer positioning / gamma exposure and 0DTE: the amplification mechanism for tails, why dealers hedge with futures (the crisis-playbook rationale), and the contested 0DTE claims.
-- Volatility events and history: 1987, 2008, Feb 2018, Mar 2020, Aug 2024, Apr 2025 are the calibration set for stress scenarios and the recency-bias examples.
-- Technical levels / support-resistance: anchoring on salient prices is cited here only in general terms; under this project's governance rule no statistics on SPY prior-session high/low behavior are computed or stored in this file.
-[uncertain: exact domain_id strings of sibling files were not available when this file was written; links are by topic.]
+- `04-volatility`: supplies the skew-steepening and term-inversion shocks and the sticky-strike vs sticky-delta assumptions used in the stress matrix; its VRP material provides the edge estimate (mu, sigma, tail) that feeds Kelly and stress sizing; the survivorship cases here are the failure modes of systematic short-vol (gap domain `16-systematic-volatility-strategies-and-relative-value`, not yet written; nearest existing coverage: `04-volatility` VRP entries, `07-strategies-and-position-management`).
+- `03-greeks-and-hedging`: gamma, vega, vanna, volga drive the scenario math and the greek limit sheet; cross-greeks explain why joint shocks exceed the sum of single shocks.
+- `09-market-structure-regulation-and-plumbing`: FINRA 4210 (Reg T, TIMS, the 2026 intraday margin standards), OCC novation and exercise rules, SIPC, NSCC margin calls (Jan 2021) are the plumbing behind margin expansion, assignment and counterparty risk.
+- `01-options-fundamentals`: SET, Thursday last trade for AM-settled SPX, SPXW 4:00 pm close, exercise cut-offs and pin risk.
+- (gap domain `14-scheduled-events-earnings-and-macro-calendar`, not yet written; nearest existing coverage: `02-pricing-theory` event-variance block, `08-empirical-literature-and-known-regularities` retail/behavioural entries): implied-move sizing from the straddle and the de Silva-Smith-So evidence on retail buying at peak IV.
+- `07-strategies-and-position-management` (Taxes section): Section 1256 scope (broad-based index options yes, ETF options no) and year-end mark-to-market.
+- `06-market-microstructure-and-intraday-behavior` (retail literature in `08-empirical-literature-and-known-regularities`): PFOF, wholesaler execution and bid-ask cost as the main channel of retail losses (Bryzgalova et al.); attention and herding flows.
+- `05-dealer-positioning-and-option-flows`: the amplification mechanism for tails, why dealers hedge with futures (the crisis-playbook rationale), and the contested 0DTE claims.
+- `10-historical-episodes-and-regimes`: 1987, 2008, Feb 2018, Mar 2020, Aug 2024, Apr 2025 are the calibration set for stress scenarios and the recency-bias examples.
+- (gap domain `19-technical-levels-and-reference-price-literature`, not yet written; nearest existing coverage: `08-empirical-literature-and-known-regularities` technical-analysis priors): anchoring on salient prices is cited here only in general terms; under this project's governance rule no statistics on SPY prior-session high/low behavior are computed or stored in this file.
 
 ## Sources
 - Kahneman, D. and Tversky, A. (1979) "Prospect Theory: An Analysis of Decision under Risk", Econometrica 47(2).

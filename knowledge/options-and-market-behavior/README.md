@@ -11,7 +11,7 @@ confidence_notes: every domain file is source-cited and was adversarially fact-c
    of truth" table that says which file owns each recurring number, the top
    misconceptions, and reading orders for different kinds of task.
 2. Open only the domain files the task needs (each is 8,000 to 12,000 words;
-   the whole base is about 125,000 words and should not be loaded at once).
+   the whole base is about 150,000 words and must not be loaded at once).
 3. Use `glossary.md` to resolve a term or ticker to its definition and owner file.
 4. Tag conventions inside the files: `[uncertain]` marks a claim that could not be
    verified against a primary source; `as of <date>` marks a recency-sensitive
@@ -32,8 +32,8 @@ per-file extracts checked it. See the root `CLAUDE.md` for the full rule set.
 
 | File | Domain | Audit rating |
 |---|---|---|
-| `00-overview-and-mental-models.md` | Entry point: id map, mental models, dependency map, single-source-of-truth table, misconceptions, numbers worth remembering, reading orders | — |
-| `glossary.md` | 180 to 300 terms and tickers with precise definitions and owner-file pointers | — |
+| `00-overview-and-mental-models.md` | Entry point: canonical id map, 15 core mental models, dependency map, single-source-of-truth table, 0DTE map, 24 misconceptions, 31 numbers worth remembering, open questions, reading orders | — |
+| `glossary.md` | 297 terms and tickers in 11 groups with precise definitions, key numbers and owner-file pointers | — |
 | `01-options-fundamentals.md` | Contracts, moneyness, exercise styles, AM vs PM settlement (SET, VRO), expiration calendar, SPX vs SPXW vs XSP vs SPY vs ES, OCC exercise/assignment chain, early exercise, corporate actions, strike and tick rules, OSI symbology, position limits, FLEX | strong |
 | `02-pricing-theory.md` | Put-call parity, bounds, box spreads, binomial, Black-Scholes-Merton and Black-76 with worked numbers, discrete dividends, American pricing, implied-vol solvers, Breeden-Litzenberger, static-arbitrage constraints, SVI/SSVI, Dupire, Heston, SABR, jumps, rough vol, variance-swap replication and the exact VIX formula, numerics | strong |
 | `03-greeks-and-hedging.md` | Closed-form first- and second-order Greeks, behavior across moneyness and time, delta-hedging P&L decomposition, gamma scalping, discrete-hedging error, sticky-strike vs sticky-delta, portfolio Greeks, spread Greeks | strong |

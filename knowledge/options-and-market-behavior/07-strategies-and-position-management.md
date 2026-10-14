@@ -215,12 +215,12 @@ Section 1256 blended federal rate = 0.6 LTCG + 0.4 ordinary ; e.g. 0.6*20% + 0.4
 
 ## Relationships to other domains
 
-- Pricing/Greeks domain [sibling ids unverified; e.g. 02-pricing-and-greeks]: Greek profiles, theta-gamma identity, early-exercise boundaries (dividend, interest, borrow), hedge bands and P&L attribution.
-- Volatility surface/VRP domain [e.g. 03-volatility-and-vrp]: IVR, skew, term structure that decide which structure is cheap; VRP size; VIX construction behind the variance formula; futures-vs-spot VIX beta.
-- Microstructure/dealer-flow domain [e.g. 04-market-microstructure-and-dealer-flows]: gamma from 0DTE and condor selling; complex-order fills, auctions, spreads; SOQ mechanics.
-- Regimes/behavior domain [e.g. 05-market-regimes-and-behavior]: regime fit (contango/backwardation, trend vs range); benchmark-return windows; support/resistance used only qualitatively for strike placement, never quantified here (governance constraint).
-- Events/earnings domain [e.g. 06-events-and-earnings]: jump-variance decomposition, crush math, FOMC/CPI intraday microstructure.
-- Regulation/tax domain [e.g. 08-regulation-and-tax], if separate: Reg T, PM, SPAN, position limits, T+1/PDT, 1256, straddle and QCC rules in trader-relevant form.
+- `02-pricing-theory` and `03-greeks-and-hedging`: Greek profiles, theta-gamma identity, early-exercise boundaries (dividend, interest, borrow), hedge bands and P&L attribution.
+- `04-volatility`: IVR, skew, term structure that decide which structure is cheap; VRP size; VIX construction behind the variance formula; futures-vs-spot VIX beta.
+- `05-dealer-positioning-and-option-flows` and `06-market-microstructure-and-intraday-behavior`: gamma from 0DTE and condor selling; auctions, spreads; SOQ mechanics; complex-order fills belong to gap domain `17-options-execution-and-order-handling` (not yet written; nearest existing coverage: `09-market-structure-regulation-and-plumbing` complex-order/auction entries).
+- `10-historical-episodes-and-regimes` (regimes) and `13-risk-management-and-behavioral` (behavior): regime fit (contango/backwardation, trend vs range); benchmark-return windows; support/resistance used only qualitatively for strike placement, never quantified here (governance constraint; general literature is gap domain `19-technical-levels-and-reference-price-literature`, not yet written; nearest existing coverage: `08-empirical-literature-and-known-regularities` technical-analysis priors).
+- (gap domain `14-scheduled-events-earnings-and-macro-calendar`, not yet written; nearest existing coverage: `02-pricing-theory` event-variance block, `06-market-microstructure-and-intraday-behavior` announcement entries): jump-variance decomposition, crush math, FOMC/CPI intraday microstructure.
+- `09-market-structure-regulation-and-plumbing`: Reg T, PM, SPAN, position limits, T+1/PDT, 1256 boundary, straddle and QCC rules in trader-relevant form (tax detail stays in this file's Taxes section).
 
 ## Sources
 

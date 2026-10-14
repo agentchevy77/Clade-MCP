@@ -230,7 +230,7 @@ OPRA capacity (SIAC, 2026-03-25): July 2026 peak 16.134M msgs/100ms aggregate pe
 - 08-empirical-literature-and-known-regularities: Ernst & Spatt (2026), Bryzgalova et al. (2023), Muravyev & Pearson (2020) and the 0DTE papers cited here are the structural-regulatory slice of that literature.
 - 11-current-landscape-2025-2026: PDT repeal (June 4, 2026), Robinhood index-options access (Jan 2025) and the Feb 2025 56% SPX 0DTE record, MX2/IEX launches, extended hours, prediction-market litigation and 2026 volume records overlap; this file holds the rule mechanics, that file the narrative.
 - 12-data-tooling-and-research-methodology: OPRA message rates and entitlements, OCC volume reports, Cboe market-share pages, Rule 606 filings and the absence of options from Rule 605 are the primary data constraints; exchange codes in the venue table map to OPRA participant IDs.
-- No tax or international/crypto domain file exists in kb/ yet; the Section 1256 boundary and the Eurex/KRX/NSE/Deribit notes here are the placeholders.
+- Tax: the Section 1256 boundary here is detailed in `07-strategies-and-position-management` (Taxes section). International/crypto: gap domain `15-options-on-futures-and-cross-asset-options`, not yet written; nearest existing coverage: the Eurex/KRX/NSE/Deribit notes here and `11-current-landscape-2025-2026` crypto-derivatives entries.
 - Governance: this file deliberately contains no SPY prior-session high/low reaction statistics (sealed 2022-06-22 to 2024-12-31 test window).
 
 ## Sources
