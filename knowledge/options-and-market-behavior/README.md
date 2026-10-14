@@ -2,10 +2,9 @@
 
 Status: **checkpoint commit, work in progress** (2026-10-14). Thirteen domain
 files have been researched by parallel agents and adversarially fact-checked
-by two independent critics each. Files marked `status: reviewed` in their
-header have had the critiques applied; files marked `status: draft` have not
-yet. A cross-file consistency audit, coverage audit, overview document and
-glossary are planned but not yet done. Treat every number as "as of the date
+by two independent critics each, with the critiques applied (all thirteen
+carry `status: reviewed`). A cross-file consistency audit, overview document
+and glossary are in progress. Treat every number as "as of the date
 stated next to it" and re-verify anything tagged `[uncertain]`.
 
 Governance: this knowledge base contains no licensed market data, no raw
