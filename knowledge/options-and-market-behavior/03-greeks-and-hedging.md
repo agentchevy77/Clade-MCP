@@ -225,7 +225,7 @@ Worked example (S = 100, K = 100, r = 4%, q = 0, sigma = 20%, T = 30/365), compu
 - Hull, J. C. (2021) "Options, Futures, and Other Derivatives", 11th ed., Pearson (Greeks, PDE relationship, hedging with futures, early exercise on dividend-paying stocks).
 - Wikipedia, "Greeks (finance)", https://en.wikipedia.org/wiki/Greeks_(finance) (closed forms cross-checked 2026-10-14; defines veta and color as d/dtau and charm as -dDelta/dtau; secondary source).
 - Boyle, P. P. and Emanuel, D. (1980) "Discretely adjusted option hedges", Journal of Financial Economics 8(3), 259-282 (verified via RePEc).
-- Kamal, M. (1998) "When You Cannot Hedge Continuously: The Corrections of Black-Scholes", Goldman Sachs Quantitative Strategies Research Notes (sole author per the note; prefactor sqrt(pi/4), Table 1 simulation 16.3%/8.1% at N = 21/84). PDF: https://github.com/s0ap/gs-quantitative-strategies-research-notes (index via https://emanuelderman.com/the-gs-quantitative-strategies-papers/). A journal version appeared in Risk, Jan. 1999 [byline and pages uncertain].
+- Kamal, M. (1998) "When You Cannot Hedge Continuously: The Corrections of Black-Scholes", Goldman Sachs Quantitative Strategies Research Notes (sole author per the note; prefactor sqrt(pi/4), Table 1 simulation 16.3%/8.1% at N = 21/84). PDF: https://github.com/s0ap/gs-quantitative-strategies-research-notes (index via https://emanuelderman.com/the-gs-quantitative-strategies-papers/). A journal version appeared as Derman, E. and Kamal, M. (1999), Risk 12(1), January 1999 (bylined Derman and Kamal; see 02-pricing-theory).
 - Leland, H. E. (1985) "Option Pricing and Replication with Transactions Costs", Journal of Finance 40(5), 1283-1301.
 - Whalley, A. E. and Wilmott, P. (1997) "An Asymptotic Analysis of an Optimal Hedging Model for Option Pricing with Transaction Costs", Mathematical Finance 7(3), 307-324 (band formula as reproduced in Wilmott, "Paul Wilmott on Quantitative Finance", transaction-costs chapter).
 - El Karoui, N., Jeanblanc-Picque, M. and Shreve, S. E. (1998) "Robustness of the Black and Scholes Formula", Mathematical Finance 8(2), 93-126.
@@ -241,7 +241,7 @@ Worked example (S = 100, K = 100, r = 4%, q = 0, sigma = 20%, T = 30/365), compu
 - Garleanu, N., Pedersen, L. H. and Poteshman, A. M. (2009) "Demand-Based Option Pricing", Review of Financial Studies 22(10) (NBER WP 11843; abstract: end users net long index options, especially OTM puts).
 - Taleb, N. N. (1997) "Dynamic Hedging: Managing Vanilla and Exotic Options", Wiley (shadow Greeks, pin risk, spread Greeks, practitioner hedging).
 - Sinclair, E. (2013) "Volatility Trading", 2nd ed., Wiley; Sinclair, E. (2020) "Positional Option Trading", Wiley (weekend/event time weighting, hedging bands, gamma-theta trade-offs).
-- Natenberg, S. (2015) "Option Volatility and Pricing", 2nd ed., McGraw-Hill (Greek behavior across moneyness/time, spread Greeks, calendars).
+- Natenberg, S. (2014) "Option Volatility and Pricing", 2nd ed., McGraw-Hill (Greek behavior across moneyness/time, spread Greeks, calendars).
 - Bakshi, G. and Kapadia, N. (2003) "Delta-Hedged Gains and the Negative Market Volatility Risk Premium", Review of Financial Studies 16(2), 527-566 (verified via RePEc).
 - Coval, J. D. and Shumway, T. (2001) "Expected Option Returns", Journal of Finance 56(3), 983-1009.
 - Carr, P. and Wu, L. (2009) "Variance Risk Premiums", Review of Financial Studies 22(3), 1311-1341 (sample 1996-2003; premium measured in variance terms).
